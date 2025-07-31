@@ -10,10 +10,9 @@ const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
+    
 
-// enter your own web3 forms access key below
-
-    formData.append("access_key", "xxxxxxxxxxxxxxxxxxxxxxxx");
+    formData.append("access_key", "afbbaf14-c42f-4f45-8c7d-91bb65902e2b");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
